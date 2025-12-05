@@ -2,7 +2,7 @@ import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import "./Footer.css";
+import "./Footer.css"
 
 const footerLinks = [
   "Audio Description",
@@ -32,7 +32,7 @@ const Footer = () => {
     <footer className="footer_outer_container">
       <div className="footer_inner_container">
         {/* Kontakt Info */}
-        <p className="contact-info">Fragen? Rufen Sie an: 0800-000-7484</p>
+        <p className="contact-info"></p>
 
         {/* Social Icons */}
         <div className="footer_icons">

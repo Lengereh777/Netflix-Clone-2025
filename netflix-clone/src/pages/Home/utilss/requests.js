@@ -1,44 +1,29 @@
-
-
-
 const API_KEY = process.env.REACT_APP_API_KEY;
-
 const accountId = process.env.REACT_APP_TMDB_ACCOUNT_ID;
-// oder du übergibst die ID später dynamisch
 
-const Request = {
-  Details: `https://api.themoviedb.org/3/account/${accountId}?api_key=${API_KEY}`,
+const Requests = {
+  // Banner / Rows
+  fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
+  fetchTrending: `/trending/all/week?api_key=${API_KEY}`,
+  fetchTopRated: `/movie/top_rated?api_key=${API_KEY}`,
+  fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
+  fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
+  fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
+  fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
+  fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
 
-  AddFavorite: `https://api.themoviedb.org/3/account/${accountId}/favorite?api_key=${API_KEY}`,
-
-  AddToWatchlist: `https://api.themoviedb.org/3/account/${accountId}/watchlist?api_key=${API_KEY}`,
-
-  FavoriteMovies: `https://api.themoviedb.org/3/account/${accountId}/favorite/movies?api_key=${API_KEY}`,
-
-  FavoriteTV: `https://api.themoviedb.org/3/account/${accountId}/favorite/tv?api_key=${API_KEY}`,
-
-  Lists: `https://api.themoviedb.org/3/account/${accountId}/lists?api_key=${API_KEY}`,
-
-  RatedMovies: `https://api.themoviedb.org/3/account/${accountId}/rated/movies?api_key=${API_KEY}`,
-
-  RatedTVEpisodes: `https://api.themoviedb.org/3/account/${accountId}/rated/tv/episodes?api_key=${API_KEY}`,
-
-  WatchlistMovies: `https://api.themoviedb.org/3/account/${accountId}/watchlist/movies?api_key=${API_KEY}`,
-
-  WatchlistTV: `https://api.themoviedb.org/3/account/${accountId}/watchlist/tv?api_key=${API_KEY}`,
+  // Account API
+  accountDetails: `https://api.themoviedb.org/3/account/${accountId}?api_key=${API_KEY}`,
+  favorite: `https://api.themoviedb.org/3/account/${accountId}/favorite?api_key=${API_KEY}`,
+  watchlist: `https://api.themoviedb.org/3/account/${accountId}/watchlist?api_key=${API_KEY}`,
+  favoriteMovies: `https://api.themoviedb.org/3/account/${accountId}/favorite/movies?api_key=${API_KEY}`,
+  favoriteTV: `https://api.themoviedb.org/3/account/${accountId}/favorite/tv?api_key=${API_KEY}`,
+  lists: `https://api.themoviedb.org/3/account/${accountId}/lists?api_key=${API_KEY}`,
+  ratedMovies: `https://api.themoviedb.org/3/account/${accountId}/rated/movies?api_key=${API_KEY}`,
+  ratedTV: `https://api.themoviedb.org/3/account/${accountId}/rated/tv?api_key=${API_KEY}`,
+  ratedEpisodes: `https://api.themoviedb.org/3/account/${accountId}/rated/tv/episodes?api_key=${API_KEY}`,
+  watchlistMovies: `https://api.themoviedb.org/3/account/${accountId}/watchlist/movies?api_key=${API_KEY}`,
+  watchlistTV: `https://api.themoviedb.org/3/account/${accountId}/watchlist/tv?api_key=${API_KEY}`,
 };
 
-export default Request;
-
-
-
-// import Request from './Request';
-
-// const myAccountId = 123456;
-
-// // Get URL for favorite movies
-// const url = Request.FavoriteMovies(myAccountId);
-// console.log(url);
-// // Output: https://api.themoviedb.org/3/account/123456/favorite/movies?api_key=e618a3dbfa981f67cf3097be8992e318
-
-
+export default Requests;
