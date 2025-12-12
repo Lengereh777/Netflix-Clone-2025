@@ -31,6 +31,7 @@ const Footer = () => {
   return (
     <footer className="footer_outer_container">
       <div className="footer_inner_container">
+        <h2> This project is for Educational Purposes Only </h2>
         {/* Kontakt Info */}
         <p className="contact-info"></p>
 
