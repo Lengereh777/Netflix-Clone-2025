@@ -3,7 +3,7 @@ import "../../componte/Footer/Footer"
 import Navbar from '../../componte/Navbar/Navbar'
 import Footer from '../../componte/Footer/Footer'
 import Banner from '../../componte/Banner/Banner'
-import RowList from '../../componte/Rowss/Rowlist/Rowlist'
+import RowList from '../../componte/Rowss/Row/Rowlist/Rowlist'
 
 
 

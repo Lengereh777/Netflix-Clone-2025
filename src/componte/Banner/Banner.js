@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "../../pages/Home/utilss/axios";
 import requests from "../../pages/Home/utilss/requests";
-import "./Banner.css";
+import "./Banner.css"
 
 
 
